@@ -3,9 +3,8 @@ name: default
 
 steps:
 - name: run
-  image: node
+  image: alpine
+  pull: if-not-exists
   commands:
     - pwd
     - ls
-  # - npm install
-  # - npm run start
